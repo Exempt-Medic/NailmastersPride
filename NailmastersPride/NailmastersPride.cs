@@ -29,7 +29,7 @@ namespace NailmastersPride
 
         private static MethodInfo origHeroUpdate = typeof(HeroController).GetMethod("orig_Update", BindingFlags.NonPublic | BindingFlags.Instance);
 
-        private ILHook ilOrigHeroUpdate;
+        private ILHook? ilOrigHeroUpdate;
 
         public NailmastersPrideMod() : base("NailmastersPride")
         {
